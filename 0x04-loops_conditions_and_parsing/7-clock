@@ -10,3 +10,9 @@ while [ $hour -lt 12 ]; do
     done
     ((hour++))
 done
+
+# Displaying hour 12 separately
+echo "Hour: 12"
+for minute in {1..59}; do
+    echo $minute
+done
