@@ -1,0 +1,12 @@
+!/usr/bin/env bash
+# This script kills the 7-highlander process
+
+# Use pkill to terminate the 7-highlander process
+pkill -f "7-highlander"
+
+# Check if the process is still running
+if [ $? -eq 0 ]; then
+    echo "Killed"
+else
+    echo "Process not found"
+fi
